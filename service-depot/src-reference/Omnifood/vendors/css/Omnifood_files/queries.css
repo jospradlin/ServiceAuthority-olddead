@@ -1,0 +1,74 @@
+
+/* Big tablets to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+
+    }    
+
+    .row { 
+        padding: 0 2%; 
+    }
+    
+    
+}
+
+
+/* iPad Horizontal: 768 to 1023 pixels -- small to big tablets */
+@media only screen and (max-width: 1023px) {
+    
+    body { 
+        font-size: 16px;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    .long-copy {
+        line-height: 145%;
+        width: 80%;
+        margin-left: 10%
+    }
+    
+    .steps-box { margin-top: 10px; }
+    .steps-box:last-child { margin-top: 10px; }
+    
+    .works-step { margin-bottom: 40px; }
+    .works-step:last-of-type { margin-bottom: 60px; }
+    
+    .app-screen {
+        width: 50%;
+    }
+    
+    .icon-small {
+        width: 17px;
+    }
+    
+    .city-feature {
+        font-size: 90%;
+    }
+    
+    
+    
+    
+    
+    
+}
+
+
+/* iPad Vertical: 481 to 767 pixels -- phones to small vertical iPads */
+@media only screen and (max-width: 767px) {
+    
+}
+
+
+/* Small Phones: 0 to 480 pixels */
+@media only screen and (max-width: 480px) {
+    
+}
+
+
+

@@ -1,0 +1,45 @@
+# import Tenant, TenantRole, Service, Role from "./generated/prisma.graphql"
+
+type Query {
+
+  # General Object Requests
+  # user(id: ID!): User!
+  # users: [User!]!
+  service(id: ID!): Service!
+  services: [Service!]!
+  # tenant(id: ID!): Tenant!
+  # tenants: [Tenant!]!
+
+  #VMWare Integration
+  # vmhosts: [VMHosts]
+  # vms: [VirtualMachine]
+  # vmnetworks: [VMNetwork]
+  # vmdatacenters: [VMDatacenter]
+  # vmdatastores: [VMDatastore]
+  # vmfolders: [VMFolder]
+}
+
+type Mutation {
+
+  # User Mutations
+  # signup(email: String!, password: String!, name: String!): AuthPayload
+  # login(email: String!, password: String!): AuthPayload
+
+  # # Tenant and Authorization Mutations
+  # createTenant(name: String!, description: String): Tenant
+  # addUserToTenant(userId: ID!, tenantId: ID!, role: String): TenantRole
+  # removeUserFromTenant(userId: ID!, tenantId: ID!): TenantRole
+
+  # #VMWare Integration
+  # vmlogin: String
+
+}
+
+
+
+# type User {
+#   id: ID!
+#   name: String!
+#   email: String!
+#   tenantRoles: [Tenant!]!
+# }

@@ -1,0 +1,7 @@
+.VerticalLineBreak {
+    float: left;
+    background-color: white;
+    width: 1px;
+    height: 4vh;
+    margin: 8px 10px 0 10px;
+}

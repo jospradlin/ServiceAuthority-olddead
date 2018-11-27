@@ -1,0 +1,28 @@
+.Logo {
+    float: left;
+    margin-right: 4px;
+    margin-top: 6px;
+    color: white;
+}
+
+.Logo img {
+    margin-left: 10px;   
+    height: 30px;
+    width: auto;
+    animation: Logo-spin infinite 20s linear;
+    display: inline-block;
+}
+
+.Logo label {
+    vertical-align:top;
+    font-size: 120%;
+    font-weight: 300;
+    margin-left: 15px;
+    color: #fff;    
+}
+
+@keyframes Logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+  

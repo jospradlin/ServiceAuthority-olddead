@@ -1,0 +1,20 @@
+.Search {
+    float: right;
+    color: #ddd;
+    margin: 8px 10px 0 10px;
+}
+
+.Search a:link,
+.Search a:visited {
+    color:white;
+    text-decoration: none;
+    text-transform: inherit;
+    font-size: 90%;
+    padding: 8px 0;
+}
+
+.Search a:hover,
+.Search a:active {
+    padding: 8px 0;
+    color: #aa0000;
+}

@@ -1,0 +1,65 @@
+.ServiceUsers {
+    width: 100%;
+    border: 1px solid #0000cc;
+    padding: 10px;
+    font-size: 90%;
+}
+
+.ServiceUsers-Header {
+    width: 100%;
+    font-size: 100%;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.ServiceUsers-Header label {
+    text-decoration-line: underline;
+    font-weight: bolder;
+}
+
+.ServiceUsers-Header p {
+    padding-top: 10px;
+    font-size: 80%;
+    color: #339;
+}
+
+.ServiceUsers-Body {
+    margin-left: 50px;
+    width: 90%;
+    font-size: 100%;
+    margin-bottom: 20px;
+    color: black;
+
+}
+
+.ServiceUsers-Body label {
+    /* font-weight: bold;
+    display: block;
+    margin-bottom: 0px; */
+    font: inherit;
+    font-size: 70%;
+    display: block;
+    /* font-weight: bold; */
+    color: #226;
+    text-transform: uppercase;
+}
+
+/* .ServiceUsers-Body-SelectorBox {
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    font: inherit;
+    padding: 5px 15px;
+    margin-bottom: 7px;
+    display: block;
+    min-height: 30px;
+    max-height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 80%;
+    overflow:scroll;
+}
+
+.ServiceUsers-Body-SelectorBox:hover{
+    border: 1px solid #226;
+} */

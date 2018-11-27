@@ -1,0 +1,114 @@
+.DynamicInputSelector {
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.DynamicInputSelector-Label {
+    /* font-weight: bold;
+    display: block;
+    margin-bottom: 0px; */
+    font: inherit;
+    font-size: 70%;
+    /* font-weight: bold; */
+    color: #226;
+    text-transform: uppercase;
+}
+
+.DynamicInputSelector-RequiredAsterick{
+    color: #cc0000;
+    font-size: 70%;
+    margin-left: 3px;
+}
+
+.DynamicInputSelector-InputElement {
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    font: inherit;
+    padding: 0 15px;
+    margin-bottom: 7px;
+    display: block;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 80%;
+}
+
+.DynamicInputSelector-DynamicMenu {
+    position: block;
+    background-color: #ddd;
+    min-width: 200px;
+    z-index: 9999;
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 10px 5px 10px 15px;
+    font-size: 80%;
+    font-weight: normal;
+    overflow:scroll;
+    min-height: 30px;
+    max-height: 155px;
+}
+
+.DynamicInputSelector input {
+    outline: none;
+    background-color: #f2f2f2;
+    font: inherit;
+    padding: 0 15px;
+    margin-bottom: 0px;
+    display: block;
+    font-size: 80%;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    /* border-bottom: 1px solid #ccc; */
+
+}
+
+.DynamicInputSelector-Invalid.DynamicInputSelector input {
+    outline: none;
+    border: 1px solid transparent;
+    /* background-color: #FDA49A; */
+    font: inherit;
+    padding: 0;
+    font-size: 100%;
+}
+
+/* .Input-InputElement input:focus {
+    background-color: #ddd;
+} */
+
+.DynamicInputSelector-ImageElement {
+    display: inline-block;
+    font-size: 150%;
+    margin-right: 20px;
+    margin-left: 0px;
+}
+
+.DynamicInputSelector-ValueElement {
+    display: inline-block;
+    width: 90%;
+    height: 100%;
+}
+
+/* .Input-InputElement:focus {
+    outline: none;
+    background-color: #ddd;
+} */
+
+.DynamicInputSelector-InputElement:hover{
+    border: 1px solid #226;
+}
+
+.DynamicInputSelector-Invalid {
+    border: 1px solid #FDA49A;
+    /* background-color: #FDA49A; */
+}
+
+.DynamicInputSelector-Disabled {
+    background-color: #cccccc; 
+}
+
+.DynamicInputSelector-InputElement .DynamicInputSelector-Disabled {
+     background-color: #cccccc; 
+}

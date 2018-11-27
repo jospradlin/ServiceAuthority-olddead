@@ -1,0 +1,20 @@
+header {
+    height: 45px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 2px #bbb;
+    background-color: rgb(46, 28, 112);
+    z-index: 9999;
+}
+
+
+.SectionSelect {
+    float: left;
+    border: 1px solid #fff;
+    margin: 14px 14px 14px 30px;
+    padding: 5px;
+    color: #fff;
+    font-size: 140%;
+}

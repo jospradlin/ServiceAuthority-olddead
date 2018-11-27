@@ -1,0 +1,237 @@
+.ServiceSelector {
+    float: left;
+    margin-top: 5px;
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.ServiceSelector i {
+    display: inline-block;
+    margin: 5px 8px 0 8px;
+}
+
+.ServiceSelector-icon-inactive {
+    color: #bbb;
+}
+
+.ServiceSelector-icon-active {
+    color: white;
+}
+
+.ServiceSelector p {
+    display: inline-block;
+}
+
+.ServiceSelector a:link,
+.ServiceSelector a:visited {
+    color: white;
+    text-decoration: none;
+    text-transform: inherit;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    padding: 8px 0;
+}
+
+.ServiceSelector a:active,
+.ServiceSelector a:hover {
+    border-bottom: 2px solid transparent;
+    padding: 8px 0;
+    color: #aa0000;
+}
+
+
+.ServiceSubmenu {
+    position: fixed;
+    background-color: #444;
+    width: 400px;
+    min-height: 50vh;
+    max-height: 88vh;
+    top: 45px;
+    z-index: 9999;
+    border: 1px solid rgb(46, 28, 112);
+    text-align: left;
+    padding: 20px 5px 10px 5px;
+    font-size: 80%;
+    font-weight: normal;
+}
+
+.ServiceSubmenu-Open {
+    display: inherit;
+}
+
+.ServiceSubmenu-Closed {
+    display: none;
+}
+
+
+
+.ServiceSubmenu label {
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #999;
+    font-size: 100%;
+}
+
+.ServiceSubmenu ul {
+    padding-left: 0px;
+    list-style-type: none;
+    font-size: 90%
+}
+
+
+.ServiceSubmenu ul li {
+    margin: 0px 0;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    width: 100%;
+    background-color: inherit;
+    color: white;
+}
+
+.ServiceSubmenu li.active {
+    background-color: #222;
+}
+
+
+
+.ServiceSubmenu ul li:hover,
+.ServiceSubmenu ul li:active {
+    background-color: #cc0000;
+    font-weight: bold;
+}
+
+.ServiceSubmenu ul li a:hover,
+.ServiceSubmenu ul li a:active {
+    color: white;
+    font-weight: bold;
+}
+
+.ServiceSubmenu-Recent {
+    font-weight: normal;
+    padding-bottom: 15px;
+}
+
+.ServiceSubmenu-Recent ul {
+    margin-top: 5px;
+}
+
+.ServiceSubmenu-Hierarchy {
+    background-color: #666;
+    color: white;
+    font-size: 90%;
+    padding-bottom: 15px;
+}
+
+.ServiceSubmenu-Hierarchy-Section {
+    margin-bottom: 10px;
+}
+
+.ServiceSubmenu-Hierarchy-Section div {
+    width: 1px;
+    height: 10px;
+    margin-left: 4px;
+    background-color: white;
+    display: inline-block;
+}
+
+.ServiceSubmenu-Hierarchy-Section i {
+    margin: 0;
+    /* background-color: #666; */
+    color: white;
+}
+
+.ServiceSubmenu-Hierarchy-Section p {
+    margin-left: 0; 
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #00cccc;
+    font-size: 100%;
+}
+
+.ServiceSubmenu-Hierarchy-Section ul li {
+    padding-left: 10px;
+}
+
+.ServiceSubmenu-Hierarchy i {
+    margin: 0 5px 0 5px;
+    /* background-color: #666; */
+    color: white;
+}
+
+.ServiceSubmenu-Hierarchy-PowerButtons {
+    color: #666;
+    font-size: 150%;
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+
+
+.ServiceSubmenu-Hierarchy-PowerButtons i {
+    color: #333;
+}
+
+.ServiceSubmenu-Hierarchy-PowerButtons i:hover,
+.ServiceSubmenu-Hierarchy-PowerButtons i:active
+{
+    color: #cc0000;
+}
+
+.ServiceSubmenu-SortingOptions {
+    color: white;
+    font-size: 100%;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+
+.ServiceSubmenu-SortingOptions ul {
+    margin-top: 5px;
+}
+
+.ServiceSubmenu-SortingOptions ul li {
+    padding-left: 10px;
+}
+
+.ServiceSubmenu-SortingOptions input {
+    margin: 0 10px 0 10px;
+}
+
+.ServiceSubmenu-SortingOptions-Filter {
+    width: 75%;
+}
+
+.ServiceSubmenu-SortingOptions ul li:hover,
+.ServiceSubmenu-SortingOptions ul li:active {
+    background-color: inherit;
+    font-weight: bold;
+}
+
+.ServiceSubmenu-SortingOptions-InputElement {
+    outline: none;
+    border: 1px solid #ccc;
+    /* border: none; */
+    background-color: #f2f2f2;
+    font: inherit;
+    padding: 0 5px;
+    margin-bottom: 7px;
+    display: block;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.ServiceSubmenu-SortingOptions-InputElement:focus {
+    outline: none;
+    background-color: #ccc;
+}
+
+.ServiceSubmenu-SortingOptions-Invalid {
+    border: 1px solid #fff;
+    background-color: #FDA49A;
+}

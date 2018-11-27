@@ -1,0 +1,105 @@
+.NavigationItems {
+    float: left;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+ .NavigationItems li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+.NavigationItems li a:link,
+.NavigationItems li a:visited,
+.NavigationItems li label
+{
+    color:white;
+    text-decoration: none;
+    text-transform: inherit;
+    font-size: 90%;
+    padding: 8px 0;
+}
+
+.NavigationItems li a:hover,
+.NavigationItems li a:active,
+.NavigationItems li a.active {
+    padding: 8px 0;
+    color: #aa0000;
+}
+
+
+.NavigationSubmenu {
+    position: fixed;
+    background-color: #444;
+    width: 350px;
+    top: 45px;
+    z-index: 9999;
+    border: 1px solid rgb(46, 28, 112);
+    text-align: left;
+    padding: 20px 5px 10px 5px;
+    font-size: 80%;
+}
+
+.NavigationSubmenu-Open {
+    display: block;
+
+}
+
+.NavigationSubmenu-Closed {
+    display: none;
+}
+
+
+
+.NavigationSubmenu label {
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #999;
+    font-size: 100%;
+}
+
+.NavigationSubmenu ul {
+    padding-left: 0px;
+    list-style-type: none;
+    font-size: 90%
+}
+
+
+.NavigationSubmenu li {
+    display: block;
+    margin: 5px 0;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    width: 100%;
+    background-color: inherit;
+    color: white;
+}
+
+.NavigationSubmenu li.active {
+    background-color: #222;
+    font-weight: bold;
+}
+
+.NavigationSubmenu ul li:hover,
+.NavigationSubmenu ul li:active {
+    background-color: #cc0000;
+    font-weight: bold;
+}
+
+.NavigationSubmenu ul li a:hover,
+.NavigationSubmenu ul li a:active {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* @media (min-width: 500px) {
+    .NavigationItems {
+        flex-flow: row;
+    }
+} */

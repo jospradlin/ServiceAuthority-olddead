@@ -1,0 +1,173 @@
+# ## User Management
+
+enum Role {
+  MASTER_ADMIN
+  TENANT_ADMIN
+  TEAM_MEMBER
+}
+
+type User {
+  id: ID! @unique
+  name: String!
+  email: String! @unique
+  password: String!
+  tenantRoles: [TenantRole!]!
+}
+
+type Tenant {
+  id: ID! @unique
+  name: String!
+  description: String
+  users: [User!]!
+}
+
+type TenantRole {
+  id: ID! @unique
+  user: User!
+  tenant: Tenant!
+  role: Role!
+}
+
+
+## Configuration Management
+
+type Service {
+  id: ID! @unique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  name: String!
+  description: String
+  status: String!
+  type: String!
+  version: String
+  canBeRemoved: Boolean! @default(value: "true")
+  dependentServices: [Service!]!
+  environments: [Environment!]!
+  # owner: User
+  # tenant: Tenant!
+}
+
+type Customer {
+  id: ID! @unique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  name: String!
+  code: String!
+}
+
+type EnvironmentTenant {
+  id: ID! @unique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  name: String!
+  code: String!
+  class: String
+  adminEmail: String!
+  customer: Customer!
+  tenantCreationDate: DateTime
+  environment: Environment!
+}
+
+
+type Environment {
+  id: ID! @unique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  name: String!
+  code: String!
+  description: String
+  region: String
+  service: Service!
+  
+  # components: [Component!]!
+}
+
+# type ArchitectureTier {
+#   id: ID! @unique
+#   createdAt: DateTime!
+#   name: String!
+#   priority: Int!
+# }
+
+# type ComponentTemplate {
+#   id: ID! @unique
+#   createdAt: DateTime!
+#   updatedAt: DateTime!
+#   name: String!
+#   tier: ArchitectureTier!
+# }
+
+# type ArchitectureDefinition {
+#   id: ID! @unique
+#   createdAt: DateTime!
+#   updatedAt: DateTime!
+#   name: String!
+#   description: String
+#   components: [ComponentTemplate!]!
+# }
+
+# type ComponentInstance {
+#   id: ID! @unique
+#   createdAt: DateTime!
+#   updatedAt: DateTime!
+#   environment: Environment!
+#   component: ComponentTemplate!
+#   attributes: [ComponentAttribute!]!
+# }
+
+# type ComponentAttribute {
+#   id: ID! @unique
+#   createdAt: DateTime!
+#   updatedAt: DateTime!
+#   parameter: String!
+#   value: String!
+# }
+
+
+
+
+# ## OpenShift Objects
+
+# type OpenShift_Project {
+#   id: ID! @unique
+#   uid: String! @unique
+#   name: String!
+#   link: String!
+#   displayName: String
+#   description: String
+#   requestor: String
+# }
+
+# type OpenShift_Deployment {
+#   id: ID! @unique
+#   uid: String! @unique
+#   name: String!
+#   link: String!
+#   namespace: OpenShift_Project!
+#   generation: Int
+#   creationTimestamp: Int
+#   replicas: Int!
+#   container: [OpenShift_Container!]!
+#   labels: [OpenShift_Label!]!
+# }
+
+# type OpenShift_Container {
+#   id: ID! @unique
+#   deployment: OpenShift_Deployment
+#   name: String!
+#   image: String!
+#   port: Int!
+  
+# }
+
+# type OpenShift_Label {
+#   id: ID! @unique
+#   objectType: OpenShift_ObjectType!
+#   key: String!
+#   value: String!
+# }
+
+# enum OpenShift_ObjectType {
+#   Project
+#   Deployment
+# }

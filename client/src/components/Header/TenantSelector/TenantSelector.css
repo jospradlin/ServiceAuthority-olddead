@@ -1,0 +1,107 @@
+.TenantSelector {
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #bbb;
+}
+
+.TenantSelector i {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.TenantSelector-icon-inactive {
+    color: white;
+}
+
+.TenantSelector-icon-active {
+    color: #aa0000;
+}
+
+.TenantSelector p {
+    display: inline-block;
+}
+
+.TenantSelector a:link,
+.TenantSelector a:visited {
+    color: white;
+    text-decoration: none;
+    text-transform: inherit;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    padding: 8px 0;
+}
+
+.TenantSelector a:active,
+.TenantSelector a:hover,
+.TenantSelector i:active,
+.TenantSelector i:hover {
+    border-bottom: 2px solid transparent;
+    color: #aa0000;
+}
+
+
+.TenantSubmenu {
+    position: fixed;
+    background-color: #444;
+    width: 350px;
+    top: 45px;
+    z-index: 9999;
+    border: 1px solid rgb(46, 28, 112);
+    text-align: left;
+    padding: 20px 5px 10px 5px;
+    font-size: 80%;
+}
+
+.TenantSubmenu-Open {
+    display: inherit;
+}
+
+.TenantSubmenu-Closed {
+    display: none;
+}
+
+
+
+.TenantSubmenu label {
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #999;
+    font-size: 100%;
+}
+
+.TenantSubmenu ul {
+    padding-left: 0px;
+    list-style-type: none;
+    font-size: 90%
+}
+
+
+.TenantSubmenu ul li {
+    margin: 5px 0;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    width: 100%;
+    background-color: inherit;
+    color: white;
+}
+
+.TenantSubmenu li.active {
+    background-color: #222;
+    font-weight: bold;
+}
+
+.TenantSubmenu ul li:hover,
+.TenantSubmenu ul li:active {
+    background-color: #cc0000;
+    font-weight: bold;
+}
+
+.TenantSubmenu ul li a:hover,
+.TenantSubmenu ul li a:active {
+    color: white;
+    font-weight: bold;
+}

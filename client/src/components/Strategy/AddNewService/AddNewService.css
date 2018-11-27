@@ -1,0 +1,32 @@
+.AddNewService {
+    width: 100%;
+    border: 1px solid #0000cc;
+    padding: 10px;
+}
+
+.AddNewService-Header {
+    width: 100%;
+    font-size: 100%;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.AddNewService-Header label {
+    text-decoration-line: underline;
+    font-weight: bolder;
+}
+
+.AddNewService-Header p {
+    padding-top: 10px;
+    font-size: 80%;
+    color: #339;
+}
+
+.AddNewService-Body {
+    margin-left: 50px;
+    width: 90%;
+    font-size: 100%;
+    margin-bottom: 20px;
+    color: black;
+
+}

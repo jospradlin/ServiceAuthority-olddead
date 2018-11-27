@@ -1,0 +1,25 @@
+.HighlightFullSpan {
+    /* background-color: #cc0000; */
+    /* border: 1px solid #666; */
+    color: #333;
+    background-color: #ddd;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 3px 15px;
+    margin: 1px 3px;
+    display: block;
+    /* border-radius: 8px; */
+    /* font-size: 80%; */
+    text-align: left;
+}
+
+.HighlightFullSpan:hover {
+    color: white;
+    background-color: #cc0000;
+}
+
+.HighlightFullSpan i {
+    margin-left: 5px;
+}
+

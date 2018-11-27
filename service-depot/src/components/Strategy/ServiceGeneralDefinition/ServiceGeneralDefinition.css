@@ -1,0 +1,33 @@
+.ServiceGeneralDefinition {
+    width: 100%;
+    border: 1px solid #0000cc;
+    padding: 10px;
+    font-size: 90%;
+}
+
+.ServiceGeneralDefinition-Header {
+    width: 100%;
+    font-size: 100%;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.ServiceGeneralDefinition-Header label {
+    text-decoration-line: underline;
+    font-weight: bolder;
+}
+
+.ServiceGeneralDefinition-Header p {
+    padding-top: 10px;
+    font-size: 80%;
+    color: #339;
+}
+
+.ServiceGeneralDefinition-Body {
+    margin-left: 50px;
+    width: 90%;
+    font-size: 100%;
+    margin-bottom: 20px;
+    color: black;
+
+}

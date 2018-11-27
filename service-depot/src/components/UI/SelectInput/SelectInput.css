@@ -1,0 +1,123 @@
+.SelectInput {
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.SelectInput-LabelElement {
+    font: inherit;
+    font-size: 70%;
+    color: #226;
+    text-transform: uppercase;
+}
+
+.SelectInput-RequiredAsterick{
+    color: #cc0000;
+    font-size: 70%;
+    margin-left: 3px;
+}
+
+.SelectInput-Invalid {
+    border: 1px solid #fff;
+    background-color: #FDA49A;
+}
+
+.SelectInput-Disabled {
+    background-color: #cccccc;
+}
+
+
+.SelectInput-SelectElement {
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    font: inherit;
+    padding: 6px 15px;
+    
+    display: block;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 80%;
+}
+
+.SelectInput-SelectElement.SelectInput-Disabled  {
+    background-color: #cccccc;
+    color: #666;
+}
+
+.SelectInput-SelectElement:focus {
+    outline: none;
+    background-color: #ccc;
+}
+
+.SelectInput-SelectElement:hover{
+    border: 1px solid #226;
+}
+
+.SelectInput-SelectElement div:hover{
+    text-decoration-line: underline;
+}
+
+.SelectInput-SelectImageElement {
+    float: left;
+    font-size: 150%;    
+    margin-right: 15px;
+    margin-left: 0px;
+    margin-top: -2px;
+}
+
+.SelectInput-SelectValueElement {
+    display: inline-block;
+    padding-top: 0px;
+    width: 85%; 
+    height: auto;
+    vertical-align: middle; 
+}
+
+.SelectInput-SelectArrowElement {
+    float: right;
+    font-size: 150%;
+    margin-right: 10px;
+    margin-top: -2px;    
+}
+
+.SelectInput-Submenu {
+    position: block;
+    background-color: #ddd;
+    min-width: 200px;
+    z-index: 9999;
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 10px 5px 10px 15px;
+    font-size: 80%;
+    font-weight: normal;
+}
+
+.SelectInput-Submenu-Open {
+    display: inherit;
+}
+
+.SelectInput-Submenu-Closed {
+    display: none;
+}
+
+.SelectInput-Submenu div {
+    padding: 5px 5px;
+    color: #333;
+
+}
+
+.SelectInput-Submenu div:hover {
+    padding: 5px 5px;
+    color: white;
+    background-color: #cc0000;
+}
+
+
+.SelectInput-Submenu div.SelectInput-Submenu-Selected {
+    padding: 5px 5px;
+    color: white;
+    background-color: #226;
+}

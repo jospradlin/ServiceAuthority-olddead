@@ -1,0 +1,30 @@
+.UserProfile {
+    float: right;
+    color: #ddd;
+    margin: 8px 10px 0 10px;
+}
+
+.UserProfile a:link,
+.UserProfile a:visited {
+    color:white;
+    text-decoration: none;
+    text-transform: inherit;
+    font-size: 90%;
+    padding: 8px 0;
+}
+
+.UserProfile a:hover,
+.UserProfile a:active {
+    padding: 8px 0;
+    color: #aa0000;
+}
+
+.UserProfile-icon {
+    display: inline-block;
+    color:  white;
+    font-size: 90%;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 50%;
+}

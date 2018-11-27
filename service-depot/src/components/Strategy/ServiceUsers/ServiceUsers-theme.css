@@ -1,0 +1,119 @@
+.container {
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.react-autosuggest__container {
+    width: 92%;
+    padding: 0px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.input {
+    outline: none;
+    background-color: #f2f2f2;
+    font: inherit;
+    padding: 0 15px;
+    margin-bottom: 0px;
+    display: block;
+    font-size: 80%;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.react-autosuggest__input {
+    outline: none;
+    background-color: #f2f2f2;
+    font: inherit;
+    padding: 0 15px;
+    margin-bottom: 0px;
+    display: block;
+    font-size: 80%;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.suggestionsContainer {
+    position: block;
+    background-color: #ddd;
+    min-width: 200px;
+    z-index: 9999;
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 10px 5px 10px 15px;
+    font-size: 80%;
+    font-weight: normal;
+    overflow:scroll;
+    min-height: 30px;
+    max-height: 155px;
+}
+
+.react-autosuggest__suggestions-container{
+    position: block;
+    background-color: #ddd;
+    min-width: 200px;
+    z-index: 9999;
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 10px 5px 10px 15px;
+    font-size: 80%;
+    font-weight: normal;
+    overflow:scroll;
+    min-height: 30px;
+    max-height: 155px;
+}
+
+
+.suggestionsList {
+
+}
+
+.react-autosuggest__suggestions-list {
+    
+}
+
+.suggestion {
+    color: #333;
+    background-color: #ddd;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 3px 15px;
+    margin: 1px 3px;
+    display: block;
+
+    text-align: left;
+}
+
+.suggestion:hover {
+    color: white;
+    background-color: #cc0000;
+}
+
+.react-autosuggest__suggestion {
+    color: #333;
+    background-color: #ddd;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 3px 15px;
+    margin: 1px 3px;
+    display: block;
+
+    text-align: left;
+}
+
+.react-autosuggest__suggestion:hover {
+    color: white;
+    background-color: #cc0000;
+}
+
+.react-autosuggest__suggestion--highlighted {
+    color: white;
+    background-color: rgb(46, 28, 112);
+}
+
