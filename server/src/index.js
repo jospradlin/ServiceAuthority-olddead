@@ -1,6 +1,7 @@
 require('./config/config');
 const { GraphQLServer } = require('graphql-yoga');
-const { Prisma } = require('prisma-binding');
+//const { Prisma } = require('prisma-binding');
+const { prisma } = require('./generated/prisma-client')
 
 const Query = require('./resolvers/Query');
 const Mutation = require('./resolvers/Mutation');
@@ -26,6 +27,7 @@ const server = new GraphQLServer({
   resolverValidationOptions: {
     requireResolversForResolveType: false
   },
+  context: { prisma },
   // context: req => ({
   //   ...req,
   //   db: new Prisma({
@@ -35,15 +37,15 @@ const server = new GraphQLServer({
   //     debug: true,
   //   }),
   // }),
-  context: req => ({
-    ...req,
-    db: new Prisma({
-      typeDefs: 'src/generated/prisma.graphql',
-      endpoint: 'http://localhost:4467/SA-primary-ds/demo',
-      secret: 'S3rv1c3Auth0r1ty!123!',
-      debug: true,
-    }),
-  }),
+  // context: req => ({
+  //   ...req,
+  //   db: new Prisma({
+  //     typeDefs: 'src/generated/prisma.graphql',
+  //     endpoint: 'http://localhost:4467/SA-primary-ds/demo',
+  //     secret: 'S3rv1c3Auth0r1ty!123!',
+  //     debug: true,
+  //   }),
+  // }),
 })
 
 const port = process.env.PORT || 6000;

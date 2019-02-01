@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #eee;
+  color: #555;
+  /* font-family: 'Lato', 'Arial', sans-serif; */
+  font-family: 'Noto Sans', 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+} 
+
+/* ----------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------*/
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}

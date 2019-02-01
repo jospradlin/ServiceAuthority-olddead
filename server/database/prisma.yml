@@ -6,7 +6,7 @@
 
 # EndPoint
 #endpoint: http://localhost:4466
-endpoint: http://localhost:4467/SA-primary-ds/demo
+endpoint: http://localhost:4467/cm
 
 # Points to the file that holds your data model
 datamodel: datamodel.graphql
@@ -15,6 +15,6 @@ datamodel: datamodel.graphql
 secret: S3rv1c3Auth0r1ty!123!
 
 # Post-Deployment hooks
-hooks:
-  post-deploy:
-    - graphql get-schema -p database
+generate:
+  - generator: javascript-client
+    output: ../src/generated/prisma-client

@@ -17,12 +17,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^3.5.1",
-    "nodemon": "^1.17.5"
-  },
-  "dependencies": {
-    "@okta/okta-react": "^1.0.2",
-    "@okta/okta-signin-widget": "^2.9.0",
-    "graphql": "^0.13.2"
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.9"
   }
 }
